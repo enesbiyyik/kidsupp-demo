@@ -5,23 +5,20 @@ import 'package:kidsupp/ui/bildirimler.dart';
 import 'package:kidsupp/ui/mesajlar.dart';
 import 'ui/drawer.dart';
 import 'package:gradient_app_bar/gradient_app_bar.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
-
-
-void main(){
+void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  Color learch = Color.fromARGB(255, 204, 170, 255);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Learch',
+      title: 'KidsUpp',
       theme: ThemeData(
-        primaryColor: learch,
+        primaryColor: Colors.blueAccent,
         visualDensity: VisualDensity.adaptivePlatformDensity,
         primarySwatch: Colors.purple,
       ),
@@ -47,6 +44,12 @@ class _MyHomePageState extends State<MyHomePage> {
   var keyMesaj = PageStorageKey("keyMesaj");
   var keyMufredat = PageStorageKey("keyMufredat");
   bool inAppPurchase = true;
+  List<String> titles = [
+    "KidsUpp",
+    "Bildirimler",
+    "Ebeveynler İçin",
+    "Müfredat"
+  ];
 
   @override
   void initState() {
@@ -61,12 +64,26 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(onPressed: (){}, splashColor: Colors.blue.shade800, backgroundColor: Colors.blueAccent,),
+      floatingActionButton: Container(
+        height: 75.0,
+        width: 75.0,
+        child: FittedBox(
+          child: FloatingActionButton(
+            onPressed: () {},
+            splashColor: Colors.blue.shade800,
+            backgroundColor: Colors.blueAccent,
+            child: SvgPicture.asset("assets/hippo.svg"),
+          ),
+        ),
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: bottomNavMenu(),
       drawer: DrawerMenu(),
       appBar: GradientAppBar(
-        title: Text("KidsUpp", style: TextStyle(color: Colors.white),),
+        title: Text(
+          titles[_currentIndex],
+          style: TextStyle(color: Colors.white),
+        ),
         gradient: LinearGradient(colors: [Colors.blue, Colors.pink]),
         iconTheme: IconThemeData(color: Colors.white),
       ),
@@ -94,8 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
       onTap: (index) {
         setState(() {
           _currentIndex = index;
-          }
-        );
+        });
       },
     );
   }
