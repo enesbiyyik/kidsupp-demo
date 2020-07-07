@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kidsupp/kid_activity.dart';
 import 'package:kidsupp/ui/akis.dart';
 import 'package:kidsupp/ui/ana_sayfa.dart';
 import 'package:kidsupp/ui/bildirimler.dart';
@@ -69,7 +70,9 @@ class _MyHomePageState extends State<MyHomePage> {
         width: 75.0,
         child: FittedBox(
           child: FloatingActionButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>KidActivity()));
+            },
             splashColor: Colors.blue.shade800,
             backgroundColor: Colors.blueAccent,
             child: SvgPicture.asset("assets/hippo.svg"),
