@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
   List<Widget> tumSayfalar;
   Bildirimler bildirimler;
-  AnaSayfa anaSayfa;
+  EnYeniler anaSayfa;
   MufredatBody mufredatBody;
   Mesajlar mesajlar;
   var keyAnaSayfa = PageStorageKey("keyAnaSayfa");
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     bildirimler = Bildirimler(keyBildirim);
-    anaSayfa = AnaSayfa(keyAnaSayfa);
+    anaSayfa = EnYeniler(keyAnaSayfa);
     mufredatBody = MufredatBody();
     mesajlar = Mesajlar(keyMesaj);
     tumSayfalar = [anaSayfa, bildirimler, mesajlar, mufredatBody];
@@ -100,13 +100,13 @@ class _MyHomePageState extends State<MyHomePage> {
     return BottomNavigationBar(
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-            icon: Icon(Icons.home), title: Text("Ana Sayfa")),
+            icon: Icon(Icons.fiber_new), title: Text("En Yeniler")),
         BottomNavigationBarItem(
             icon: Icon(Icons.notifications), title: Text("Bildirimler")),
         BottomNavigationBarItem(
-            icon: Icon(Icons.message), title: Text("Mesajlar")),
+            icon: Icon(Icons.graphic_eq), title: Text("Analizler")),
         BottomNavigationBarItem(
-            icon: Icon(Icons.library_books), title: Text("Müfredat")),
+            icon: Icon(Icons.library_books), title: Text("Gelişim")),
       ],
       fixedColor: Colors.blue,
       type: BottomNavigationBarType.fixed,

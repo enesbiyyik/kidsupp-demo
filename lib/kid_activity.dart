@@ -42,7 +42,7 @@ class _KidActivityState extends State<KidActivity> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius:
-                                BorderRadius.vertical(top: Radius.circular(10)),
+                                BorderRadius.all(Radius.circular(10)),
                             color: Colors.blue,
                             image: DecorationImage(
                               fit: BoxFit.cover,
@@ -82,7 +82,7 @@ class _KidActivityState extends State<KidActivity> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius:
-                                BorderRadius.vertical(top: Radius.circular(10)),
+                                BorderRadius.all(Radius.circular(10)),
                             color: Colors.blue,
                             image: DecorationImage(
                               fit: BoxFit.cover,
@@ -122,7 +122,7 @@ class _KidActivityState extends State<KidActivity> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius:
-                                BorderRadius.vertical(top: Radius.circular(10)),
+                                BorderRadius.all(Radius.circular(10)),
                             color: Colors.blue,
                             image: DecorationImage(
                               fit: BoxFit.cover,
@@ -162,7 +162,7 @@ class _KidActivityState extends State<KidActivity> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius:
-                                BorderRadius.vertical(top: Radius.circular(10)),
+                                BorderRadius.all(Radius.circular(10)),
                             color: Colors.blue,
                             image: DecorationImage(
                               fit: BoxFit.cover,
@@ -202,7 +202,7 @@ class _KidActivityState extends State<KidActivity> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius:
-                                BorderRadius.vertical(top: Radius.circular(10)),
+                                BorderRadius.all(Radius.circular(10)),
                             color: Colors.blue,
                             image: DecorationImage(
                               fit: BoxFit.cover,
@@ -242,7 +242,7 @@ class _KidActivityState extends State<KidActivity> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius:
-                                BorderRadius.vertical(top: Radius.circular(10)),
+                                BorderRadius.all(Radius.circular(10)),
                             color: Colors.blue,
                             image: DecorationImage(
                               fit: BoxFit.cover,

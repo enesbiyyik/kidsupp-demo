@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_youtube/flutter_youtube.dart';
 import 'package:kidsupp/ui/video_screen_math.dart';
-import 'package:kidsupp/utilities/keys.dart';
 
-class AnaSayfa extends StatefulWidget {
-  AnaSayfa(Key k) : super(key: k);
+class EnYeniler extends StatefulWidget {
+  EnYeniler(Key k) : super(key: k);
 
   @override
-  _AnaSayfaState createState() => _AnaSayfaState();
+  _EnYenilerState createState() => _EnYenilerState();
 }
 
-class _AnaSayfaState extends State<AnaSayfa> {
+class _EnYenilerState extends State<EnYeniler> {
   @override
   Widget build(BuildContext context) {
     return ListView(
