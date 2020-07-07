@@ -20,7 +20,7 @@ class _KidActivityState extends State<KidActivity> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: (){
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>CikBakalim()));
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>CikBakalim()));
       },
       child: Scaffold(
         body: ListView(
