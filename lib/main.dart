@@ -48,8 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
   List<String> titles = [
     "KidsUpp",
     "Bildirimler",
-    "Ebeveynler İçin",
-    "Müfredat"
+    "Analizler",
+    "Gelişim"
   ];
 
   @override

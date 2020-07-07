@@ -7,7 +7,6 @@ class DrawerMenu extends StatefulWidget {
 }
 
 class _DrawerMenuState extends State<DrawerMenu> {
-  Color learch = Color.fromARGB(255, 204, 170, 255);
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -25,7 +24,7 @@ class _DrawerMenuState extends State<DrawerMenu> {
               children: <Widget>[
                 InkWell(
                   onTap: (){},
-                  splashColor: learch,
+                  splashColor: Colors.blue,
                   child: Container(
                       margin: EdgeInsets.all(5),
                       child: ListTile(
@@ -35,17 +34,7 @@ class _DrawerMenuState extends State<DrawerMenu> {
                 ),
                 InkWell(
                   onTap: (){},
-                  splashColor: learch,
-                  child: Container(
-                      margin: EdgeInsets.all(5),
-                      child: ListTile(
-                        leading: Icon(Icons.person_outline),
-                        title: Text("Eşleşmeler"),
-                      )),
-                ),
-                InkWell(
-                  onTap: (){},
-                  splashColor: learch,
+                  splashColor: Colors.blue,
                   child: Container(
                       margin: EdgeInsets.all(5),
                       child: ListTile(
@@ -54,29 +43,19 @@ class _DrawerMenuState extends State<DrawerMenu> {
                       )),
                 ),
                 Divider(),
-                InkWell(
-                  onTap: (){},
-                  splashColor: learch,
-                  child: Container(
-                      margin: EdgeInsets.all(5),
-                      child: ListTile(
-                        leading: Icon(Icons.monetization_on),
-                        title: Text("Altın Satın Al"),
-                      )),
-                ),
                 Container(
                   margin: EdgeInsets.all(5),
                   child: AboutListTile(
-                    applicationName: "Flutter Dersleri",
+                    applicationName: "KidsUpp",
                     applicationIcon: Icon(Icons.apps),
                     applicationVersion: "2.0",
                     child: Text("Hakkımızda"),
                     applicationLegalese: null,
                     icon: Icon(Icons.book),
                     aboutBoxChildren: <Widget>[
-                      Text("C1"),
-                      Text("C1"),
-                      Text("C1"),
+                      Text("Tüm hakları saklıdır."),
+                      Text("İsim hakkı ve uygulamanın tamamı"),
+                      Text("Enes Bıyyık'a aittir."),
                     ],
                   ),
                 ),

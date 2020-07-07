@@ -22,66 +22,52 @@ class _BildirimlerState extends State<Bildirimler> {
   _bildirimListesiOlustur(index) {
     sayac++;
     return SafeArea(
-      child: Dismissible(
-        key: Key(sayac.toString()),
-        direction: DismissDirection.startToEnd,
-        onDismissed: (direction){
-          setState(() {
-
-          });
-        },
-        child: Container(
-          margin: EdgeInsets.all(10),
-          width: MediaQuery.of(context).size.width - 40,
-          decoration: BoxDecoration(
-            border: Border.all(color: learch),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Material(
-            elevation: 4,
-            borderRadius: BorderRadius.circular(10),
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 10),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Expanded(
-                    flex: 3,
-                    child: Icon(Icons.person, size: 60,),
-                  ),
-                  SizedBox(width: 10,),
-                  Expanded(
-                    flex: 10,
-                    child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 5),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Text("Kişi $index", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),),
-                          SizedBox(height: 5,),
-                          Text("Kişi $index", style: TextStyle(fontSize: 18, color: Colors.grey),),
-                        ],
-                      ),
+      child: Container(
+        margin: EdgeInsets.all(10),
+        width: MediaQuery.of(context).size.width - 40,
+        decoration: BoxDecoration(
+          border: Border.all(color: learch),
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: Material(
+          elevation: 4,
+          borderRadius: BorderRadius.circular(10),
+          child: Container(
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                SizedBox(width: 10,),
+                Expanded(
+                  flex: 10,
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text("En Yeni Bildirim $index", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),),
+                        SizedBox(height: 5,),
+                        Text("Kısa detayı $index", style: TextStyle(fontSize: 18, color: Colors.grey),),
+                      ],
                     ),
                   ),
-                  Expanded(
-                    flex: 3,
-                    child: Container(
-                      margin: EdgeInsets.symmetric(vertical: 8),
-                      height: double.infinity,
-                      child: FlatButton(
-                        onPressed: () {},
-                        child: Center(child: Icon(Icons.check, size: 25, color: Colors.white,)),
-                        color: Colors.green,
-                        splashColor: Colors.greenAccent,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10),),
-                      ),
+                ),
+                Expanded(
+                  flex: 3,
+                  child: Container(
+                    margin: EdgeInsets.symmetric(vertical: 8),
+                    height: double.infinity,
+                    child: IconButton(
+                      onPressed: () {},
+                      color: Colors.green,
+                      splashColor: Colors.greenAccent,
+                      icon: Icon(Icons.search),
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),
