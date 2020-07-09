@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kidsupp/kid_activity.dart';
+import 'package:kidsupp/login.dart';
 import 'package:kidsupp/ui/akis.dart';
 import 'package:kidsupp/ui/ana_sayfa.dart';
 import 'package:kidsupp/ui/bildirimler.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         primarySwatch: Colors.purple,
       ),
-      home: MyHomePage(),
+      home: AnaEkran(),
     );
   }
 }
