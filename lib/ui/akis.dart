@@ -9,7 +9,6 @@ class MufredatBody extends StatefulWidget {
 }
 
 class _MufredatBodyState extends State<MufredatBody> {
-  Color learch = Color.fromARGB(255, 204, 170, 255);
   bool inAppPurchase = true;
   bool hata = false;
   int _aktifStep = 0;
@@ -41,7 +40,7 @@ class _MufredatBodyState extends State<MufredatBody> {
                 children: <Widget>[
                   SizedBox(width: 60,),
                   RaisedButton(
-                    color: Color.fromARGB(255, 204, 170, 255),
+                    color: Colors.blue,
                     onPressed: onStepContinue,
                     child: _aktifStep == tumStepler.length-1 ? const Text("Bitir", style: TextStyle(color: Colors.white)): const Text("Devam", style: TextStyle(color: Colors.white),),
                   ),
@@ -90,7 +89,7 @@ class _MufredatBodyState extends State<MufredatBody> {
           title: Text("Konu 1"),
           subtitle: Text("Konu Detay"),
           key: key0,
-          activeColor: learch,
+          activeColor: Colors.blue,
         ),
       ),
       Step(
@@ -128,7 +127,7 @@ class _MufredatBodyState extends State<MufredatBody> {
           title: Text("Konu 2"),
           subtitle: Text("Konu Detay"),
           key: key2,
-          activeColor: learch,
+          activeColor: Colors.blue,
         ),
       ),
       Step(
@@ -166,7 +165,7 @@ class _MufredatBodyState extends State<MufredatBody> {
           title: Text("Konu 3"),
           subtitle: Text("Konu Detay"),
           key: key4,
-          activeColor: learch,
+          activeColor: Colors.blue,
         ),
       ),
       Step(
@@ -278,7 +277,7 @@ class _MufredatBodyState extends State<MufredatBody> {
 
               },
                 child: Text("Sertifikayı Görüntüle", style: TextStyle(color: Colors.white),),
-                color: learch,
+                color: Colors.blue,
                 splashColor: Colors.white,
               ),
             ],
