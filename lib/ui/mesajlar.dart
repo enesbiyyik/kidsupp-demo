@@ -18,8 +18,8 @@ class _MesajlarState extends State<Mesajlar> {
       height: double.maxFinite,
       alignment: Alignment.center,
       child: Center(
-        child: Text("Analizler Çok Yakında Sizlerle", style: TextStyle(fontWeight: FontWeight.w400, fontSize: 24),),
+        child: Text("Analizler Çok Yakında Sizlerle", style: TextStyle(fontWeight: FontWeight.w400, fontSize: 24, fontFamily: 'Child'),),
       ),
     );
   }
-}
+} 

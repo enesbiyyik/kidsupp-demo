@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: GradientAppBar(
         title: Text(
           titles[_currentIndex],
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.white, fontFamily: 'Child', ),
         ),
         gradient: LinearGradient(colors: [Colors.blue, Colors.pink]),
         iconTheme: IconThemeData(color: Colors.white),

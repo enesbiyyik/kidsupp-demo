@@ -43,7 +43,7 @@ class _EnYenilerState extends State<EnYeniler> {
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: NetworkImage(
-                              "https://www.ilkokul1.com/wp-content/uploads/2019/12/MATEMAT%C4%B0K-7-768x394.jpg"),
+                              "https://i.ytimg.com/vi/rqiu_xcvSk4/maxresdefault.jpg"),
                         ),
                       ),
                     ),
@@ -56,9 +56,10 @@ class _EnYenilerState extends State<EnYeniler> {
                       color: Colors.white,
                       width: double.infinity,
                       child: Text(
-                        "Eğlenceli Toplama",
+                        "Çıkarma İşlemi",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 24),
+                          fontFamily: 'Child',
+                            fontWeight: FontWeight.w500, fontSize: 24),
                       ),
                     ),
                   ),
@@ -73,7 +74,77 @@ class _EnYenilerState extends State<EnYeniler> {
                       padding: EdgeInsets.fromLTRB(20, 0, 10, 10),
                       alignment: Alignment.topLeft,
                       width: double.infinity,
-                      child: Text("Matematik"),
+                      child: Text("Matematik",style: TextStyle(
+                          fontFamily: 'Child',),),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        GestureDetector(
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> VideoMath()));
+          },
+          child: Container(
+            height: 300,
+            width: MediaQuery.of(context).size.width - 40,
+            margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.blue),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Material(
+              color: Colors.transparent,
+              borderRadius: BorderRadius.circular(10),
+              elevation: 6,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(
+                    flex: 16,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.vertical(top: Radius.circular(10)),
+                        color: Colors.blue,
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: NetworkImage(
+                              "https://i.ytimg.com/vi/pFU--VNjxFw/maxresdefault.jpg"),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 3,
+                    child: Container(
+                      padding: EdgeInsets.fromLTRB(20, 10, 10, 0),
+                      alignment: Alignment.centerLeft,
+                      color: Colors.white,
+                      width: double.infinity,
+                      child: Text(
+                        "Alfabe Öğreniyorum",
+                        style: TextStyle(
+                          fontFamily: 'Child',
+                            fontWeight: FontWeight.w500, fontSize: 24),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.vertical(bottom: Radius.circular(10)),
+                        color: Colors.white,
+                      ),
+                      padding: EdgeInsets.fromLTRB(20, 0, 10, 10),
+                      alignment: Alignment.topLeft,
+                      width: double.infinity,
+                      child: Text("Dil",style: TextStyle(
+                          fontFamily: 'Child',),),
                     ),
                   ),
                 ],
@@ -125,7 +196,8 @@ class _EnYenilerState extends State<EnYeniler> {
                       child: Text(
                         "Eğlenceli Toplama",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 24),
+                          fontFamily: 'Child',
+                            fontWeight: FontWeight.w500, fontSize: 24),
                       ),
                     ),
                   ),
@@ -140,7 +212,8 @@ class _EnYenilerState extends State<EnYeniler> {
                       padding: EdgeInsets.fromLTRB(20, 0, 10, 10),
                       alignment: Alignment.topLeft,
                       width: double.infinity,
-                      child: Text("Matematik"),
+                      child: Text("Matematik",style: TextStyle(
+                          fontFamily: 'Child',),),
                     ),
                   ),
                 ],
@@ -192,7 +265,8 @@ class _EnYenilerState extends State<EnYeniler> {
                       child: Text(
                         "Eğlenceli Toplama",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 24),
+                          fontFamily: 'Child',
+                            fontWeight: FontWeight.w500, fontSize: 24),
                       ),
                     ),
                   ),
@@ -207,7 +281,8 @@ class _EnYenilerState extends State<EnYeniler> {
                       padding: EdgeInsets.fromLTRB(20, 0, 10, 10),
                       alignment: Alignment.topLeft,
                       width: double.infinity,
-                      child: Text("Matematik"),
+                      child: Text("Matematik",style: TextStyle(
+                          fontFamily: 'Child',),),
                     ),
                   ),
                 ],
@@ -259,7 +334,8 @@ class _EnYenilerState extends State<EnYeniler> {
                       child: Text(
                         "Eğlenceli Toplama",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 24),
+                          fontFamily: 'Child',
+                            fontWeight: FontWeight.w500, fontSize: 24),
                       ),
                     ),
                   ),
@@ -274,7 +350,8 @@ class _EnYenilerState extends State<EnYeniler> {
                       padding: EdgeInsets.fromLTRB(20, 0, 10, 10),
                       alignment: Alignment.topLeft,
                       width: double.infinity,
-                      child: Text("Matematik"),
+                      child: Text("Matematik",style: TextStyle(
+                          fontFamily: 'Child',),),
                     ),
                   ),
                 ],
@@ -326,7 +403,8 @@ class _EnYenilerState extends State<EnYeniler> {
                       child: Text(
                         "Eğlenceli Toplama",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 24),
+                          fontFamily: 'Child',
+                            fontWeight: FontWeight.w500, fontSize: 24),
                       ),
                     ),
                   ),
@@ -341,7 +419,8 @@ class _EnYenilerState extends State<EnYeniler> {
                       padding: EdgeInsets.fromLTRB(20, 0, 10, 10),
                       alignment: Alignment.topLeft,
                       width: double.infinity,
-                      child: Text("Matematik"),
+                      child: Text("Matematik",style: TextStyle(
+                          fontFamily: 'Child',),),
                     ),
                   ),
                 ],
@@ -350,7 +429,9 @@ class _EnYenilerState extends State<EnYeniler> {
           ),
         ),
         GestureDetector(
-          onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=> VideoMath()));},
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> VideoMath()));
+          },
           child: Container(
             height: 300,
             width: MediaQuery.of(context).size.width - 40,
@@ -391,7 +472,8 @@ class _EnYenilerState extends State<EnYeniler> {
                       child: Text(
                         "Eğlenceli Toplama",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 24),
+                          fontFamily: 'Child',
+                            fontWeight: FontWeight.w500, fontSize: 24),
                       ),
                     ),
                   ),
@@ -406,7 +488,146 @@ class _EnYenilerState extends State<EnYeniler> {
                       padding: EdgeInsets.fromLTRB(20, 0, 10, 10),
                       alignment: Alignment.topLeft,
                       width: double.infinity,
-                      child: Text("Matematik"),
+                      child: Text("Matematik",style: TextStyle(
+                          fontFamily: 'Child',),),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        GestureDetector(
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> VideoMath()));
+          },
+          child: Container(
+            height: 300,
+            width: MediaQuery.of(context).size.width - 40,
+            margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.blue),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Material(
+              color: Colors.transparent,
+              borderRadius: BorderRadius.circular(10),
+              elevation: 6,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(
+                    flex: 16,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.vertical(top: Radius.circular(10)),
+                        color: Colors.blue,
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: NetworkImage(
+                              "https://www.ilkokul1.com/wp-content/uploads/2019/12/MATEMAT%C4%B0K-7-768x394.jpg"),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 3,
+                    child: Container(
+                      padding: EdgeInsets.fromLTRB(20, 10, 10, 0),
+                      alignment: Alignment.centerLeft,
+                      color: Colors.white,
+                      width: double.infinity,
+                      child: Text(
+                        "Eğlenceli Toplama",
+                        style: TextStyle(
+                          fontFamily: 'Child',
+                            fontWeight: FontWeight.w500, fontSize: 24),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.vertical(bottom: Radius.circular(10)),
+                        color: Colors.white,
+                      ),
+                      padding: EdgeInsets.fromLTRB(20, 0, 10, 10),
+                      alignment: Alignment.topLeft,
+                      width: double.infinity,
+                      child: Text("Matematik",style: TextStyle(
+                          fontFamily: 'Child',),),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        GestureDetector(
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> VideoMath()));
+          },
+          child: Container(
+            height: 300,
+            width: MediaQuery.of(context).size.width - 40,
+            margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.blue),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Material(
+              color: Colors.transparent,
+              borderRadius: BorderRadius.circular(10),
+              elevation: 6,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(
+                    flex: 16,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.vertical(top: Radius.circular(10)),
+                        color: Colors.blue,
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: NetworkImage(
+                              "https://www.ilkokul1.com/wp-content/uploads/2019/12/MATEMAT%C4%B0K-7-768x394.jpg"),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 3,
+                    child: Container(
+                      padding: EdgeInsets.fromLTRB(20, 10, 10, 0),
+                      alignment: Alignment.centerLeft,
+                      color: Colors.white,
+                      width: double.infinity,
+                      child: Text(
+                        "Eğlenceli Toplama",
+                        style: TextStyle(
+                          fontFamily: 'Child',
+                            fontWeight: FontWeight.w500, fontSize: 24),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.vertical(bottom: Radius.circular(10)),
+                        color: Colors.white,
+                      ),
+                      padding: EdgeInsets.fromLTRB(20, 0, 10, 10),
+                      alignment: Alignment.topLeft,
+                      width: double.infinity,
+                      child: Text("Matematik",style: TextStyle(
+                          fontFamily: 'Child',),),
                     ),
                   ),
                 ],

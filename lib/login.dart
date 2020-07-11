@@ -29,7 +29,7 @@ class _AnaEkranState extends State<AnaEkran> {
                       color: Colors.pink,
                       child: Text(
                         "Hemen Başla",
-                        style: TextStyle(fontSize: 36, color: Colors.white),
+                        style: TextStyle(fontSize: 36, color: Colors.white, fontFamily: 'Child'),
                         textAlign: TextAlign.left,
                       ),
                       shape: RoundedRectangleBorder(
@@ -50,7 +50,7 @@ class _AnaEkranState extends State<AnaEkran> {
                       color: Colors.blue,
                       child: Text(
                         "Kayıt Ol",
-                        style: TextStyle(fontSize: 36, color: Colors.white),
+                        style: TextStyle(fontSize: 36, color: Colors.white, fontFamily: 'Child'),
                         textAlign: TextAlign.right,
                       ),
                       shape: RoundedRectangleBorder(

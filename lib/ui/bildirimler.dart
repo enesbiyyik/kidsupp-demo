@@ -47,9 +47,9 @@ class _BildirimlerState extends State<Bildirimler> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text("En Yeni Bildirim $index", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),),
+                        Text("En Yeni Bildirim $index", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 24, fontFamily: 'Child'),),
                         SizedBox(height: 5,),
-                        Text("Kısa detayı $index", style: TextStyle(fontSize: 18, color: Colors.grey),),
+                        Text("Kısa detayı $index", style: TextStyle(fontSize: 18, color: Colors.grey, fontFamily: 'Child'),),
                       ],
                     ),
                   ),

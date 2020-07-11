@@ -42,13 +42,13 @@ class _MufredatBodyState extends State<MufredatBody> {
                   RaisedButton(
                     color: Colors.blue,
                     onPressed: onStepContinue,
-                    child: _aktifStep == tumStepler.length-1 ? const Text("Bitir", style: TextStyle(color: Colors.white)): const Text("Devam", style: TextStyle(color: Colors.white),),
+                    child: _aktifStep == tumStepler.length-1 ? const Text("Bitir", style: TextStyle(color: Colors.white, fontFamily: 'Child')): const Text("Devam", style: TextStyle(color: Colors.white, fontFamily: 'Child'),),
                   ),
                   SizedBox(width: 30,),
                   RaisedButton(
                     color: Colors.red,
                     onPressed: onStepCancel,
-                    child: Text("Geri", style: TextStyle(color: Colors.white),),
+                    child: Text("Geri", style: TextStyle(color: Colors.white, fontFamily: 'Child'),),
                   ),
                 ],
               );
@@ -79,22 +79,22 @@ class _MufredatBodyState extends State<MufredatBody> {
   List<Step> _tumStepler() {
     List<Step> stepler = [
       Step(
-        title: Text("ADIM 1", style: TextStyle(fontSize: 24),),
+        title: Text("ADIM 1", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
         state: _stateleriAyarla(0),
         isActive: true,
         content: CheckboxListTile(value: checkBox, onChanged: (a){
           setState(() {
             checkBox = a;
           });},
-          title: Text("Konu 1"),
-          subtitle: Text("Konu Detay"),
+          title: Text("Konu 1", style: TextStyle(fontFamily: 'Child')),
+          subtitle: Text("Konu Detay", style: TextStyle(fontFamily: 'Child'),),
           key: key0,
           activeColor: Colors.blue,
         ),
       ),
       Step(
-        title: Text("KONU B", style: TextStyle(fontSize: 24),),
-        subtitle: Text("TEMEL B KAVRAMLARI", style: TextStyle(fontSize: 16),),
+        title: Text("KONU B", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
+        subtitle: Text("TEMEL B KAVRAMLARI", style: TextStyle(fontSize: 16, fontFamily: 'Child'),),
         state: _stateleriAyarla(1),
         isActive: true,
         content: TextFormField(
@@ -117,22 +117,22 @@ class _MufredatBodyState extends State<MufredatBody> {
         ),
       ),
       Step(
-        title: Text("ADIM 2", style: TextStyle(fontSize: 24),),
+        title: Text("ADIM 2", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
         state: _stateleriAyarla(2),
         isActive: true,
         content: CheckboxListTile(value: checkBox2, onChanged: (a){
           setState(() {
             checkBox2 = a;
           });},
-          title: Text("Konu 2"),
-          subtitle: Text("Konu Detay"),
+          title: Text("Konu 2", style: TextStyle(fontFamily: 'Child'),),
+          subtitle: Text("Konu Detay", style: TextStyle(fontFamily: 'Child'),),
           key: key2,
           activeColor: Colors.blue,
         ),
       ),
       Step(
-        title: Text("KONU C", style: TextStyle(fontSize: 24),),
-        subtitle: Text("TEMEL C KAVRAMLARI", style: TextStyle(fontSize: 16),),
+        title: Text("KONU C", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
+        subtitle: Text("TEMEL C KAVRAMLARI", style: TextStyle(fontSize: 16, fontFamily: 'Child'),),
         state: _stateleriAyarla(3),
         isActive: true,
         content: TextFormField(
@@ -155,22 +155,22 @@ class _MufredatBodyState extends State<MufredatBody> {
         ),
       ),
       Step(
-        title: Text("ADIM 3", style: TextStyle(fontSize: 24),),
+        title: Text("ADIM 3", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
         state: _stateleriAyarla(4),
         isActive: true,
         content: CheckboxListTile(value: checkBox3, onChanged: (a){
           setState(() {
             checkBox3 = a;
           });},
-          title: Text("Konu 3"),
-          subtitle: Text("Konu Detay"),
+          title: Text("Konu 3", style: TextStyle(fontFamily: 'Child'),),
+          subtitle: Text("Konu Detay", style: TextStyle(fontFamily: 'Child'),),
           key: key4,
           activeColor: Colors.blue,
         ),
       ),
       Step(
-        title: Text("KONU D", style: TextStyle(fontSize: 24),),
-        subtitle: Text("TEMEL D KAVRAMLARI", style: TextStyle(fontSize: 16),),
+        title: Text("KONU D", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
+        subtitle: Text("TEMEL D KAVRAMLARI", style: TextStyle(fontSize: 16, fontFamily: 'Child'),),
         state: _stateleriAyarla(5),
         isActive: true,
         content: TextFormField(
