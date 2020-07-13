@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
           titles[_currentIndex],
           style: TextStyle(color: Colors.white, fontFamily: 'Child', ),
         ),
-        gradient: LinearGradient(colors: [Colors.blue, Colors.pink]),
+        gradient: LinearGradient(colors: [Colors.blue, Colors.blue.shade200, Colors.pink.shade200, Colors.pink]),
         iconTheme: IconThemeData(color: Colors.white),
       ),
       body: _currentIndex <= tumSayfalar.length - 1

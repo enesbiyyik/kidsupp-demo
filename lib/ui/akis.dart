@@ -79,22 +79,22 @@ class _MufredatBodyState extends State<MufredatBody> {
   List<Step> _tumStepler() {
     List<Step> stepler = [
       Step(
-        title: Text("ADIM 1", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
+        title: Text("Matematik", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
         state: _stateleriAyarla(0),
         isActive: true,
         content: CheckboxListTile(value: checkBox, onChanged: (a){
           setState(() {
             checkBox = a;
           });},
-          title: Text("Konu 1", style: TextStyle(fontFamily: 'Child')),
-          subtitle: Text("Konu Detay", style: TextStyle(fontFamily: 'Child'),),
+          title: Text("İşlemler", style: TextStyle(fontFamily: 'Child')),
+          subtitle: Text("Çıkarma", style: TextStyle(fontFamily: 'Child'),),
           key: key0,
           activeColor: Colors.blue,
         ),
       ),
       Step(
-        title: Text("KONU B", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
-        subtitle: Text("TEMEL B KAVRAMLARI", style: TextStyle(fontSize: 16, fontFamily: 'Child'),),
+        title: Text("Türçe", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
+        subtitle: Text("Alfabeyi Öğrenelim", style: TextStyle(fontSize: 16, fontFamily: 'Child'),),
         state: _stateleriAyarla(1),
         isActive: true,
         content: TextFormField(
@@ -117,22 +117,22 @@ class _MufredatBodyState extends State<MufredatBody> {
         ),
       ),
       Step(
-        title: Text("ADIM 2", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
+        title: Text("Renkler", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
         state: _stateleriAyarla(2),
         isActive: true,
         content: CheckboxListTile(value: checkBox2, onChanged: (a){
           setState(() {
             checkBox2 = a;
           });},
-          title: Text("Konu 2", style: TextStyle(fontFamily: 'Child'),),
-          subtitle: Text("Konu Detay", style: TextStyle(fontFamily: 'Child'),),
+          title: Text("Ana Renkler", style: TextStyle(fontFamily: 'Child'),),
+          subtitle: Text("Ana Renkleri Tanıyalım", style: TextStyle(fontFamily: 'Child'),),
           key: key2,
           activeColor: Colors.blue,
         ),
       ),
       Step(
-        title: Text("KONU C", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
-        subtitle: Text("TEMEL C KAVRAMLARI", style: TextStyle(fontSize: 16, fontFamily: 'Child'),),
+        title: Text("Duygular", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
+        subtitle: Text("Günlük hayatta duygu ve hislerimiz", style: TextStyle(fontSize: 16, fontFamily: 'Child'),),
         state: _stateleriAyarla(3),
         isActive: true,
         content: TextFormField(
@@ -155,22 +155,22 @@ class _MufredatBodyState extends State<MufredatBody> {
         ),
       ),
       Step(
-        title: Text("ADIM 3", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
+        title: Text("Canlılar", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
         state: _stateleriAyarla(4),
         isActive: true,
         content: CheckboxListTile(value: checkBox3, onChanged: (a){
           setState(() {
             checkBox3 = a;
           });},
-          title: Text("Konu 3", style: TextStyle(fontFamily: 'Child'),),
-          subtitle: Text("Konu Detay", style: TextStyle(fontFamily: 'Child'),),
+          title: Text("Hayvanlar", style: TextStyle(fontFamily: 'Child'),),
+          subtitle: Text("Çevremizdeki Hayvanlar", style: TextStyle(fontFamily: 'Child'),),
           key: key4,
           activeColor: Colors.blue,
         ),
       ),
       Step(
-        title: Text("KONU D", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
-        subtitle: Text("TEMEL D KAVRAMLARI", style: TextStyle(fontSize: 16, fontFamily: 'Child'),),
+        title: Text("Bitkiler", style: TextStyle(fontSize: 24, fontFamily: 'Child'),),
+        subtitle: Text("Etrafımızdaki Bitkiler", style: TextStyle(fontSize: 16, fontFamily: 'Child'),),
         state: _stateleriAyarla(5),
         isActive: true,
         content: TextFormField(
